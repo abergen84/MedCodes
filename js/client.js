@@ -44,15 +44,15 @@ var substringMatcher = function(strs) {
 var icd9 = new Bloodhound({
 	datumTokenizer: Bloodhound.tokenizers.obj.whitespace('description'),
 	queryTokenizer: Bloodhound.tokenizers.whitespace,
-	prefetch: '../codes/icd9_diagnosis_codes.json',
-	remote: '../codes/icd9_diagnosis_codes.json'
+	prefetch: './codes/icd9_diagnosis_codes.json',
+	remote: './codes/icd9_diagnosis_codes.json'
 });
 
 var icd10 = new Bloodhound({
 	datumTokenizer: Bloodhound.tokenizers.obj.whitespace('description'),
 	queryTokenizer: Bloodhound.tokenizers.whitespace,
-	prefetch: '../codes/icd10_diagnosis_codes.json',	
-	remote: '../codes/icd10_diagnosis_codes.json'
+	prefetch: './codes/icd10_diagnosis_codes.json',	
+	remote: './codes/icd10_diagnosis_codes.json'
 }); 
 
 icd9.initialize();
