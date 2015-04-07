@@ -15,29 +15,33 @@
   		<input class="typeahead" type="text" placeholder="ICD-9/ICD-10 code">
 	</div> -->
 
-        <input type='text' name='icd9searchTerm' id='icd9SearchTerm' value='Enter ICD-9 Description'>
+     <div class="title">
+        <img src="./images/bg.png">
+    </div>
+
+    <div class="icd9">    
+        <input class="icd9data" type='text' name='icd9searchTerm' id='icd9SearchTerm' placeholder='Enter ICD-9 Description'>
+        <button type='button' onclick="doSearch('icd9')">Search ICD-9</button>
+    </div>
+    
+    <div class="icd10">
+        <input class="icd10data" type='text' name='icd10searchTerm' id='icd10SearchTerm' placeholder='Enter ICD-10 Description'>
+        <button type='button' onclick="doSearch('icd10')">Search ICD-10</button>
+    </div>
         <br>
-        <button type='button' onclick="doSearch('icd9')">Search ICD9!</button>
-        <br><br>
-        <input type='text' name='icd10searchTerm' id='icd10SearchTerm' value='Enter ICD-10 Description'>
-        <br>
-        <button type='button' onclick="doSearch('icd10')">Search ICD10!</button>
-        <br><br>
         <h3 id='searchResultsHeader' style='visibility:hidden'>Search results:</h3>
         <div id='searchResults'></div>
 
-    <div class="title">
-        <span>CODE LOOKUP</span>
-    </div>
+   
 
-    <div class="text">
+    <!-- <div class="text">
         <span>>> ROUTINE ADULT MEDICAL EXAM</span><br>
         <span>>> ENCOUNTER FOR PREPROCEDURAL LAB EXAM</span><br>
         <span>>> ENCOUNTER FOR ADMINISTRATIVE EXAM</span><br>
         <span>>> VACCINATION FOR INFLUENZA</span><br>
         <span>>> OTHER LONG TERM (CURRENT) DRUG THERAPY</span><br>
         <span>>> OTHER LONG TERM (CURRENT) ADVIL USE</span>
-    </div>
+    </div> -->
     <!-- if using loader, use the line below -->
     <script type="text/javascript" src="./bower_components/Loader/loader.js" id="loaderjs" data-app="./js/app.js"></script>
     <!-- otherwise if using browserify, comment out the above line and uncomment the following line -->

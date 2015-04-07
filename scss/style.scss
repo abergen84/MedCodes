@@ -83,58 +83,34 @@ body {
     transition: opacity .25s ease;
 }
 
-#dataset .tt-dropdown-menu {
-    maxheight: 300px;
-    overflow-y: auto;
+
+.icd9 {
+    .icd9data {
+        width: 300px;
+    }
+    // position: absolute;
+    display: inline-block;
+    width: 400px;
+    margin-left: 25px;
+    // margin-top: 50px;
 }
 
-#dataset {
-
-    position: absolute;
-    z-index: 1;
-    margin: auto;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    height: 50px;
-    width: 500px;
-
-    input {
-        width: 500px;
-        height: 50px;
+.icd10 {
+    .icd10data {
+        width: 300px;
     }
+    // position: absolute;
+    display: inline-block;
+    width: 400px;
+    margin-left: 25px;
 }
 
 .title {
-    z-index: -1;
-    position: absolute;
-    width: 800px;
-    height: 200px;
-    font-family: "Oswald";
-    font-size: 6em;
-    color: #FFF700;
-    // text-align: center;
-    // top: 50%;
-    // transform: translateY(-50%);
-    // margin: 0 auto;
-    margin: auto;
-    top: 0; 
-    left: 0; 
-    bottom: 0; 
-    right: 0;
+    display: block;
+    // z-index: -1;
 }
 
-.text {
+#searchResultsHeader {
     font-family: "PT Mono";
-    font-size: 24px;
-    position: absolute;
-    z-index: -2;
-    width: 800px;
-    height: 300px;
-    margin: auto;
-    top: 0; 
-    left: 100; 
-    bottom: 0; 
-    right: 0;
+    margin-left: 25px;
 }

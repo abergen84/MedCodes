@@ -47,7 +47,7 @@ var searchICD10 = function(searchTerm) {
 };
 
 
-//RELATED TO HTML
+//HTML
 
 var doSearch = function(codeFamily) {
               var searchTerm = null;
