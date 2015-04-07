@@ -11,9 +11,20 @@
 <body>
     <div class="container"></div>
 
-    <div id="dataset">
+    <!-- <div id="dataset">
   		<input class="typeahead" type="text" placeholder="ICD-9/ICD-10 code">
-	</div>
+	</div> -->
+
+        <input type='text' name='icd9searchTerm' id='icd9SearchTerm' value='Enter ICD-9 Description'>
+        <br>
+        <button type='button' onclick="doSearch('icd9')">Search ICD9!</button>
+        <br><br>
+        <input type='text' name='icd10searchTerm' id='icd10SearchTerm' value='Enter ICD-10 Description'>
+        <br>
+        <button type='button' onclick="doSearch('icd10')">Search ICD10!</button>
+        <br><br>
+        <h3 id='searchResultsHeader' style='visibility:hidden'>Search results:</h3>
+        <div id='searchResults'></div>
 
     <div class="title">
         <span>CODE LOOKUP</span>
